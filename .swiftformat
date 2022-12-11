@@ -34,7 +34,7 @@
 --trimwhitespace always
 --wraparguments preserve
 --wrapcollections preserve
---stripunusedargs unnamed-only
+# --stripunusedargs unnamed-only
 
 # rules
 
