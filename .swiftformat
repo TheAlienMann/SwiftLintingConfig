@@ -30,7 +30,7 @@
 --self remove
 --semicolons inline
 --stripunusedargs closure-only
---swiftversion 5.5
+--swiftversion 5.8
 --trimwhitespace always
 --wraparguments preserve
 --wrapcollections preserve
@@ -39,3 +39,4 @@
 # rules
 
 --enable isEmpty
+--enable redundantInit

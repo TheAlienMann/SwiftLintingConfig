@@ -1,14 +1,24 @@
 disabled_rules:
-- trailing_whitespace
-- type_name
-- switch_case_alignment
-- line_length
+  - todo
+  - trailing_whitespace
+  - type_name
+  - switch_case_alignment
+  - line_length
 
 opt_in_rules:
-- empty_count
-- empty_string
+  - empty_count
+  - empty_string
 
 excluded:
-- Carthage
-- Pods
-- SwiftLint/Common/3rdPartyLib
+  - Carthage
+  - Pods
+  - SwiftLint/Common/3rdPartyLib
+
+custom_rules:
+  explicit_init:
+    name: Explicit Initialization
+    regex: "(?<!super)(?<!self)\\s*\\.init\\("
+    message: "Use explicit class name for initialization"
+    severity: warning
+
+reporter: "emoji"
